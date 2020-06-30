@@ -1,0 +1,238 @@
+{
+  "appVersion": "5.0.0-beta.4",
+  "timestamp": 1593525106426,
+  "projects": [
+    {
+      "name": "Sample API",
+      "services": [],
+      "environments": [],
+      "folders": [
+        {
+          "name": "sample API",
+          "description": null,
+          "collapsed": false,
+          "inProgress": false,
+          "abortRun": false,
+          "rename": false,
+          "requests": [
+            {
+              "name": "Create Event",
+              "url": "http://localhost:8080/api/manage_events/create_event",
+              "method": "POST",
+              "bodyType": "json",
+              "bodyXml": "",
+              "bodyJson": "      {\n        \"dtstart\": \"2020-06-30T15:00:00Z\",\n        \"signalName\": \"simple\",\n        \"signalType\": \"LEVEL\",\n        \"payload\": 1,\n        \"marketContext\": \"http://MarketContext1\",\n        \"duration\": 10,\n        \"venId\": \"80f606cdf60c35c64cd4\"\n      }",
+              "bodyText": "",
+              "authType": null,
+              "response": {
+                "contentType": "application/json; charset=utf-8",
+                "headers": [
+                  {
+                    "name": "cache-control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "name": "content-length",
+                    "value": "49"
+                  },
+                  {
+                    "name": "content-type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "name": "etag",
+                    "value": "W/\"4263902901d72899cd5d8bf2057dd40e\""
+                  },
+                  {
+                    "name": "x-content-type-options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "name": "x-frame-options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "name": "x-request-id",
+                    "value": "6e9497df-9858-4c8e-ac7b-c496c84c532a"
+                  },
+                  {
+                    "name": "x-runtime",
+                    "value": "1.027196"
+                  },
+                  {
+                    "name": "x-xss-protection",
+                    "value": "1; mode=block"
+                  }
+                ],
+                "responseText": "{\"status\":\"OK\",\"event_id\":\"be817f4b6779c15ee698\"}",
+                "statusCode": 200,
+                "statusText": "OK",
+                "duration": 1033,
+                "size": "49 bytes"
+              },
+              "inProgress": false,
+              "reqTabIndex": 0,
+              "resTabIndex": 0,
+              "description": null,
+              "reqPanelSize": 0.4547707558859975,
+              "resPanelSize": 0.5452292441140025,
+              "rename": false,
+              "responseView": "preview",
+              "headers": [],
+              "queryParams": [],
+              "bodyFormItems": [],
+              "assertions": [],
+              "auths": [],
+              "saved": true
+            },
+            {
+              "name": "Cancel Event",
+              "url": "http://localhost:8080/api/manage_events/cancel_event",
+              "method": "POST",
+              "bodyType": "json",
+              "bodyXml": "",
+              "bodyJson": "{\n    \"eventId\": \"be817f4b6779c15ee698\"\n}",
+              "bodyText": "",
+              "authType": null,
+              "response": {
+                "contentType": "application/json; charset=utf-8",
+                "headers": [
+                  {
+                    "name": "cache-control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "name": "content-length",
+                    "value": "15"
+                  },
+                  {
+                    "name": "content-type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "name": "etag",
+                    "value": "W/\"0c776997933eb60833b37beaf43814c8\""
+                  },
+                  {
+                    "name": "x-bullet-console-text",
+                    "value": "[\"user: benjamin\\nAVOID eager loading detected\\n  Event =\\u003e [:targets]\\n  Remove from your finder: :includes =\\u003e [:targets]\\nCall stack\\n\\n\"]"
+                  },
+                  {
+                    "name": "x-content-type-options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "name": "x-frame-options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "name": "x-request-id",
+                    "value": "aa8c8282-31a1-44e5-aec2-8d4a3d900571"
+                  },
+                  {
+                    "name": "x-runtime",
+                    "value": "0.455861"
+                  },
+                  {
+                    "name": "x-xss-protection",
+                    "value": "1; mode=block"
+                  }
+                ],
+                "responseText": "{\"status\":\"OK\"}",
+                "statusCode": 200,
+                "statusText": "OK",
+                "duration": 459,
+                "size": "15 bytes"
+              },
+              "inProgress": false,
+              "reqTabIndex": 0,
+              "resTabIndex": 0,
+              "description": null,
+              "reqPanelSize": null,
+              "resPanelSize": null,
+              "rename": false,
+              "responseView": "preview",
+              "headers": [],
+              "queryParams": [],
+              "bodyFormItems": [],
+              "assertions": [],
+              "auths": [],
+              "saved": true
+            },
+            {
+              "name": "Delete Event",
+              "url": "http://localhost:8080/api/manage_events/delete_event",
+              "method": "POST",
+              "bodyType": "json",
+              "bodyXml": "",
+              "bodyJson": "{\n    \"eventId\": \"be817f4b6779c15ee698\"\n}",
+              "bodyText": "",
+              "authType": null,
+              "response": {
+                "contentType": "application/json; charset=utf-8",
+                "headers": [
+                  {
+                    "name": "cache-control",
+                    "value": "max-age=0, private, must-revalidate"
+                  },
+                  {
+                    "name": "content-length",
+                    "value": "15"
+                  },
+                  {
+                    "name": "content-type",
+                    "value": "application/json; charset=utf-8"
+                  },
+                  {
+                    "name": "etag",
+                    "value": "W/\"0c776997933eb60833b37beaf43814c8\""
+                  },
+                  {
+                    "name": "x-content-type-options",
+                    "value": "nosniff"
+                  },
+                  {
+                    "name": "x-frame-options",
+                    "value": "SAMEORIGIN"
+                  },
+                  {
+                    "name": "x-request-id",
+                    "value": "69b3d026-10ae-4219-980b-5c8e7dc20a42"
+                  },
+                  {
+                    "name": "x-runtime",
+                    "value": "1.007001"
+                  },
+                  {
+                    "name": "x-xss-protection",
+                    "value": "1; mode=block"
+                  }
+                ],
+                "responseText": "{\"status\":\"OK\"}",
+                "statusCode": 200,
+                "statusText": "OK",
+                "duration": 1035,
+                "size": "15 bytes"
+              },
+              "inProgress": false,
+              "reqTabIndex": 0,
+              "resTabIndex": 0,
+              "description": null,
+              "reqPanelSize": null,
+              "resPanelSize": null,
+              "rename": false,
+              "responseView": "preview",
+              "headers": [],
+              "queryParams": [],
+              "bodyFormItems": [],
+              "assertions": [],
+              "auths": [],
+              "saved": true
+            }
+          ]
+        }
+      ],
+      "requests": []
+    }
+  ]
+}
