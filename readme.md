@@ -40,9 +40,9 @@ The APIs interact directly with the database through ActiveRecord.  An overview 
 
 The ActiveRecord models can be found in `app/models`.  The top of the files contains a list of fields avaialble in that model.  The top of the class definition includes a list of relationships (has_many for one to many, and belongs_to for one to one).  These relationships guide what additional objects need to be created when creating itmes such as events.
 
-## Produciton API's
+## Production APIs
 This API is provided as an example only and is not intended for production use.  There are two key pieces missing from the sample:
 * authoriziation checks
 * unit tests
 
-We are working on documentation for creating produciton ready APIs.  In the meantime, please contact us at contact@gridfabric.io for help getting started on a prouduction API.
+We are working on documentation for creating production-ready APIs.  In the meantime, please contact us at contact@gridfabric.io for help getting started on a production API.
